@@ -12,6 +12,7 @@ import {
   faGamepad,
   faGlobe,
   faGuitar,
+  faHamburger,
   faHandshake,
   faHourglassEnd,
   faMobile,
@@ -19,7 +20,6 @@ import {
   faPlayCircle,
   faProjectDiagram,
   faRecordVinyl,
-  faSearch,
   faShippingFast,
   faSoap,
   faStream,
@@ -28,6 +28,7 @@ import {
   faUserFriends,
   faUsers,
   faUserTie,
+  faUtensils,
   faWalking,
 } from "@fortawesome/free-solid-svg-icons";
 import { SidebarItem } from "./SidebarItem";
@@ -77,6 +78,9 @@ export const Sidebar: FunctionComponent = () => {
         <SidebarItem title="Hygiene" icon={faSoap} />
         <SidebarItem title="Exercise" icon={faWalking} />
         <SidebarItem title="Chores" icon={faBroom} />
+        <SidebarSection>Food</SidebarSection>
+        <SidebarItem title="Recipes" icon={faUtensils} />
+        <SidebarItem title="Restaurants" icon={faHamburger} />
         <SidebarSection>People</SidebarSection>
         <SidebarItem title="Family" icon={faUsers} />
         <SidebarItem title="Friends" icon={faUserFriends} />
