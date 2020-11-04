@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
+import { Dashboard } from "./Dashboard";
 
 function App() {
-  return (<>Coming Soon</>);
+  return <Dashboard>Coming Soon</Dashboard>;
 }
 
 export default App;

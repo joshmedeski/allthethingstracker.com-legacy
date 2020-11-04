@@ -1,72 +1,70 @@
+import { createGlobalStyle } from "styled-components";
+
 export enum MaxWidth {
-  thin = "maxWidth: 200px",
-  wide = "maxWidth: 800px",
-  full = "maxWidth: 100%",
+  thin = "200px",
+  wide = "800px",
+  full = "100%",
+}
+
+export enum Color {
+  dark = "hsl(60, 100%, 3%)",
+  light = "hsl(60, 61%, 94%)",
+}
+
+export enum Padding {
+  default = "10px",
 }
 
 export enum FontFamily {
-  system = "font-family: -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;",
+  system = "-apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;",
 }
 
 export enum FontSize {
-  smallest = "fontSize: 12px;",
-  small = "fontSize: 14px;",
-  default = "fontSize: 16px;",
-  large = "fontSize: 18px;",
-  larger = "fontSize: 20px;",
-  largerX2 = "fontSize: 24px;",
-  largerX3 = "fontSize: 36px;",
-  largerX4 = "fontSize: 48px;",
-  largerX5 = "fontSize: 60px;",
-  largest = "fontSize: 72px;",
-}
-
-export enum Spacing {
-  less = "12px",
-  default = "24px",
-  more = "30px",
+  smallest = "12px",
+  small = "14px",
+  default = "16px",
+  large = "18px",
+  larger = "20px",
+  largerX2 = "24px",
+  largerX3 = "36px",
+  largerX4 = "48px",
+  largerX5 = "60px",
+  largest = "72px",
 }
 
 export enum FontWeight {
-  normal = "fontWeight: normal",
-  bold = "fontWeight: 800",
-  bolder = "fontWeight: 900",
-}
-
-export enum ErrorColor {
-  lighter = "color: #",
-  default = "color: #",
-  darker = "color: #",
-}
-
-export enum SuccessColor {
-  lighter = "color: #",
-  default = "color: #",
-  darker = "color: #",
-}
-
-export enum WarningColor {
-  lighter = "color: #",
-  default = "color: #",
-  darker = "color: #",
+  normal = "normal",
+  bold = "800",
+  bolder = "900",
 }
 
 export enum BorderRadius {
-  less = "border-radius: 3px",
-  default = "border-radius: 5px",
-  more = "border-radius: 7px",
+  less = "border-radius: 3px;",
+  default = "border-radius: 5px;",
+  more = "border-radius: 7px;",
 }
 
-export enum TextColor {
-  inverted = "color: #ffffff",
-  lightest = "color: #",
-  lighter = "color: #",
-  light = "color: #",
-  default = "color: #",
+export enum Device {
+  mobileS = "(min-width: 320px)",
+  mobileM = "(min-width: 375px)",
+  mobileL = "(min-width: 425px)",
+  tablet = "(min-width: 768px)",
+  laptop = "(min-width: 1024px)",
+  laptopL = "(min-width: 1440px)",
+  desktop = "(min-width: 2560px)",
+  ultrawide = "(min-width: 3440px)",
 }
 
-export enum BackgroundColor {
-  inverted = "backgroundColor: #000",
-  default = "backgroundColor: #fff",
-  dark = "backgroundColor: #fff",
-}
+export const GlobalStyle = createGlobalStyle`
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: ${FontFamily.system}
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${FontFamily.system}
+    line-height: 1;
+    margin: 0;
+  }
+`;
