@@ -12,7 +12,13 @@ export enum Color {
 }
 
 export enum Padding {
-  default = "10px",
+  default = "16px",
+}
+
+export enum Margin {
+  small = "4px",
+  medium = "8px",
+  default = "16px",
 }
 
 export enum FontFamily {
@@ -52,7 +58,7 @@ export enum Device {
   laptop = "(min-width: 1024px)",
   laptopL = "(min-width: 1440px)",
   desktop = "(min-width: 2560px)",
-  ultrawide = "(min-width: 3440px)",
+  ultraWide = "(min-width: 3440px)",
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -60,6 +66,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: ${FontFamily.system}
+    box-sizing: border-box;
   }
 
   h1, h2, h3, h4, h5, h6 {
